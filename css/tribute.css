@@ -43,3 +43,12 @@ img {
 hr {
     width: 90%;
 }
+
+@media only screen and (min-width: 1000px) {
+    #main {
+        left:0;
+        right: 0; 
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
