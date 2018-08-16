@@ -1,0 +1,45 @@
+body {
+    overflow: scroll;
+    line-height: 1.5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    left: 0; 
+    right: 0;
+    margin: 0.5rem auto;
+}
+
+#main {
+    margin: 1rem;
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#tribute-info {
+    max-width: 700px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 2rem auto;
+}
+
+.center {
+    text-align: center;
+}
+
+#main hr {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+hr {
+    width: 90%;
+}
