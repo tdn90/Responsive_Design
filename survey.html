@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title" class="center">Survey Form</h1>
+
+        <form method="POST" action="" id="survey-form" class="grid-container">
+            <p id="description" class="center">Help us improve ARC tutoring</p>
+
+            <div class="row">
+                <label for="name" id="name-label" class="left">* Name:</label>
+                <input type="text" name="name" id="name" placeholder="John Allen" class="right" required>
+            </div>
+    
+            <div class="row">
+                <label for="email" class="left" id="email-label">* Email:</label>
+                <input type="email" id="email" name="name" placeholder="john.allen@example.com" required class="right">
+            </div>
+    
+            <div class="row">
+                <label for="age" class="left" id="number-label">* Age:</label>
+                <input type="number" min="1" max="80" id="age" placeholder="Age" required name="age" class="right">
+            </div>
+    
+            <div class="row">
+                <label for="class" class="left">* Class Year:</label>
+                <select required name="class" id="dropdown" class="right">
+                    <option disabled selected>Select an option</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="none">Not Applicable</option>
+                </select>
+            </div>
+    
+            <div class="row">
+                <p class="left">* How likely is it would you recommend ARC Tutoring to a friend?
+                </p>
+    
+                <div class="right">
+                    <label>
+                        <input type="radio" name="rec" checked>  Absolutely
+                    </label>
+                    <label>
+                        <input type="radio" name="rec">  Likely
+                    </label>
+                    <label>
+                        <input type="radio" name="rec">  Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="rec">  Never
+                    </label>
+                    <label>
+                        <input type="radio" name="rec">  I have not sought out help from ARC.
+                    </label>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="left">
+                    <p>* Areas that ARC has helped you improve:</p>
+                    <p>(Check all that apply)</p>
+                </div>
+    
+                <div class="right">
+                    <label for="homework">
+                        <input id="homework" type="checkbox" name="help" value="homework">  Homework
+                    </label>
+    
+                    <label for="test">
+                        <input id="test" type="checkbox" name="help" value="test">  Test
+                    </label>
+    
+                    <label for="time">
+                        <input id="time" type="checkbox" name="help" value="timeManagement">  Time Management
+                    </label>
+    
+                    <label for="skill">
+                        <input id="skill" type="checkbox" name="help" value="problemSolving">  Problem Solving Skills
+                    </label>
+
+                    <label for="skill">
+                        <input id="skill" type="checkbox" name="help" value="Other">  Other
+                    </label>
+
+                    <label for="skill">
+                        <input id="skill" type="checkbox" name="help" value="none">  None
+                    </label>
+                </div>
+            </div>
+    
+            <div class="row">
+                <p class="left">Any comments you want us to know?</p>
+                <textarea placeholder="Type your comment here: ARC is awesome..." name="comment" id="comment" class="right"></textarea>
+            </div>
+    
+            <button id="submit" type="submit" class="center">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
