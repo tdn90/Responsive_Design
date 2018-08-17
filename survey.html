@@ -28,7 +28,7 @@
     
             <div class="row">
                 <label for="age" class="left" id="number-label">* Age:</label>
-                <input type="number" min="1" max="80" id="age" placeholder="Age" required name="age" class="right">
+                <input type="number" min="1" max="80" id="number" placeholder="Age" required name="age" class="right">
             </div>
     
             <div class="row">
@@ -49,19 +49,19 @@
     
                 <div class="right">
                     <label>
-                        <input type="radio" name="rec" checked>  Absolutely
+                        <input type="radio" name="rec" value="1" checked>  Absolutely
                     </label>
                     <label>
-                        <input type="radio" name="rec">  Likely
+                        <input type="radio" value="2" name="rec">  Likely
                     </label>
                     <label>
-                        <input type="radio" name="rec">  Maybe
+                        <input type="radio" value="3" name="rec">  Maybe
                     </label>
                     <label>
-                        <input type="radio" name="rec">  Never
+                        <input type="radio" value="4" name="rec">  Never
                     </label>
                     <label>
-                        <input type="radio" name="rec">  I have not sought out help from ARC.
+                        <input type="radio" value="5" name="rec">  I have not sought out help from ARC.
                     </label>
                 </div>
             </div>
@@ -89,12 +89,12 @@
                         <input id="skill" type="checkbox" name="help" value="problemSolving">  Problem Solving Skills
                     </label>
 
-                    <label for="skill">
-                        <input id="skill" type="checkbox" name="help" value="Other">  Other
+                    <label for="other">
+                        <input id="other" type="checkbox" name="help" value="Other">  Other
                     </label>
 
-                    <label for="skill">
-                        <input id="skill" type="checkbox" name="help" value="none">  None
+                    <label for="none">
+                        <input id="none" type="checkbox" name="help" value="none">  None
                     </label>
                 </div>
             </div>
