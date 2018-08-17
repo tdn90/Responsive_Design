@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    overflow: scroll;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header li:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Styling */
+nav img {
+    width: 3rem;
+    height: 100%;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+nav #company-logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+nav ul {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+/* Form Styling */
+header form {
+    margin-top: 6rem;
+}
+
+input {
+    display: block;
+    padding: 1rem;
+}
+
+#email {
+    width: 50%;
+    border-radius: 5px;
+}
+
+#submit {
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Main section styling */
+main {
+    margin: 2rem 0;
+}
+
+#features {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    position: relative;
+    display: inline-block;
+    width: 20vw;
+}
+
+i {
+    position: absolute;
+}
+
+#infinity {
+    color: rgb(152, 221, 48);
+    font-size: 1.5rem;
+}
+
+#money {
+    color: rgb(235, 235, 67);
+    font-size: 1.5rem;
+}
+
+#tool {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.right {
+    display: inline-block;
+    width: 80vw;
+}
+
+#how-it-works {
+    margin: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 60%;
+    max-width: 600px;
+    left: 0;
+    right: 0; 
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.plan {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.plan p {
+    padding: 0 2rem;
+}
+
+.choice {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(211, 206, 206);
+    padding: 1rem;
+}
+
+.button {
+    border: 1px solid black;
+    background-color: yellow;
+    color: black;
+    width: 50%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: rgb(219, 218, 218);
+    position: relative;
+}
+
+footer ul {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+footer li {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header form {
+        margin-top: 8rem;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+
+    .plan {
+        margin-bottom: 1rem;
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    header form {
+        margin-top: 10rem;
+    }
+}
